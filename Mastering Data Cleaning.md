@@ -11,3 +11,6 @@ Before we start cleaning up our data, let's get Python ready. First, make sure y
 ```python
 pip install pandas numpy
 ```
+
+These libraries are our main tools for working with and understanding data. Pandas give us DataFrames, which are perfect for cleaning up messy data, while NumPy helps us work with large amounts of data organized in rows and columns.
+
