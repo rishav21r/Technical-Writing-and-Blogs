@@ -18,7 +18,7 @@ These libraries are our main tools for working with and understanding data. Pand
 
 Data can come in many forms, like CSV files, JSON files, or even Excel spreadsheets. Each type needs a different way to open and work with it. Pandas has tools to help with this, making it simple to bring your data into a DataFrame like a table with rows and columns. Let me explain how and show you the Python code for different data types:
 
-### Code Explained:
+#### Code Explained:
 
 The read_data(file_path) function takes the location of your file and figures out what type of file it is (CSV, JSON, etc.). Then, it uses the right Pandas tool to open the file and put the data into a DataFrame so you can start working with it.
 
@@ -44,3 +44,20 @@ def read_data(file_path):
 df = read_data('your_dataset.csv')
 
 ```
+
+#### Detailed Steps:
+##### 1. Extract the File Extension:
+- The function uses `os.path.splitext(file_path)` to split the file path into two parts: the root and the extension. The extension is stored in `file_ext`.
+
+##### 2. Conditional Reading Based on Extension:
+
+- If the file extension is `.csv`, it uses `pd.read_csv(file_path)` to read the data into a DataFrame.
+- If the file extension is `.json`, it uses `pd.read_json(file_path)`.
+- If the file extension is `.xls` or `.xlsx`, it uses `pd.read_excel(file_path)`.
+- If the file format is not supported, it raises a ValueError with an appropriate message.
+
+This function ensures that you can handle multiple data formats with a single function call, making your data import process more flexible and efficient. Let’s break down the supported formats:
+
+- CSV (Comma-Separated Values): It is commonly used for data exchange because it’s simple and supported by many applications.
+- JSON (JavaScript Object Notation): Used for transmitting data in web applications. 
+- Excel Files: Widely used for data storage and analysis in business contexts.
