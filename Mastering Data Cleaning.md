@@ -14,3 +14,10 @@ pip install pandas numpy
 
 These libraries are our main tools for working with and understanding data. Pandas give us DataFrames, which are perfect for cleaning up messy data, while NumPy helps us work with large amounts of data organized in rows and columns.
 
+## Step 2: Handling Data Formats
+
+Data can come in many forms, like CSV files, JSON files, or even Excel spreadsheets. Each type needs a different way to open and work with it. Pandas has tools to help with this, making it simple to bring your data into a DataFrame, which is like a table with rows and columns. Let me explain how and show you the Python code for different data types:
+
+### Code Explained:
+
+The read_data(file_path) function takes the location of your file and figures out what type of file it is (CSV, JSON, etc.). Then, it uses the right Pandas tool to open the file and put the data into a DataFrame so you can start working with it.
