@@ -211,4 +211,6 @@ Outliers, those exceptional data points that deviate significantly from the norm
 
 ![IQQR](./images/iqr.png)
 
-Li, Zhi & Fei, Fei & Zhang, Guanglie. (2022). Edge-to-Cloud IIoT for Condition Monitoring in Manufacturing Systems with Ubiquitous Smart Sensors. Sensors. 22. 5901. 10.3390/s22155901. 
+*Image from [Li, Zhi & Fei, Fei & Zhang, Guanglie. (2022)](https://www.researchgate.net/publication/362595959_Edge-to-Cloud_IIoT_for_Condition_Monitoring_in_Manufacturing_Systems_with_Ubiquitous_Smart_Sensors)*
+
+
