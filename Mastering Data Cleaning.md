@@ -182,3 +182,25 @@ def dealing_missing_data(df):
 # Apply the function to your dataset
 check_missing_data(df)
 ```
+
+### Detailed Steps:
+
+#### 1. Calculate the Proportion of Rows with Missing Values:
+
+- The function calculates the proportion of rows containing any missing values using `df.isnull().any(axis=1).sum()` divided by the total number of rows `df.shape[0]`.
+
+#### 2. Decide on Dropping or Imputing Missing Values:
+
+- If the proportion of rows with missing values is less than or equal to **5%**, it drops those rows using `df.dropna(inplace=True)`.
+- If more than **5%** of the rows contain missing values, it prints the proportion of missing values for each column and calls the `dealing_missing_data(df)` function to handle the missing values.
+
+#### 3. Handle Missing Values Column by Column:
+
+- The `dealing_missing_data(df)` function iterates over each column and its proportion of missing values.
+- If the proportion of missing values in a column is less than or equal to **10%**, it fills the missing values with the median of that column using `df[name].fillna(df[name].median(), inplace=True)`.
+- If the proportion of missing values in a column is greater than **10%**, it flags that column for further investigation.
+
+#### 4. Return the Cleaned DataFrame:
+
+- The function prints which columns had their missing values imputed and which columns require further investigation.
+
