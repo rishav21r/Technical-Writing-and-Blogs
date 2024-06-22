@@ -69,3 +69,14 @@ Duplicate data can skew your analysis and lead to incorrect conclusions. Elimina
 ### Code Explanation
 The `drop_duplicates(df, columns=None)` function acts as a data detective, meticulously identifying and removing duplicate rows lurking within your DataFrame.
 
+```python
+def drop_duplicates(df, columns=None):
+    if columns is None:
+        df.drop_duplicates(inplace=True)
+    else:
+        df.drop_duplicates(subset=columns, inplace=True)
+    return df
+
+# Apply the function to your dataset
+df = drop_duplicates(df)
+```
