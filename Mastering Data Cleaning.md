@@ -80,3 +80,20 @@ def drop_duplicates(df, columns=None):
 # Apply the function to your dataset
 df = drop_duplicates(df)
 ```
+
+### Detailed Steps:
+
+#### 1. Check for Duplicates:
+
+- The function `drop_duplicates` takes a DataFrame `df` and an optional parameter columns.
+- If columns are not provided, the function checks for duplicates across all columns.
+- If columns are specified, it checks for duplicates only within the specified subset of columns.
+
+#### 2. Remove Duplicates:
+
+- `df.drop_duplicates(inplace=True)` removes duplicate rows directly in the original DataFrame if no columns are specified.
+- `df.drop_duplicates(subset=columns, inplace=True)` removes duplicate rows based on the subset of columns specified.
+
+#### 3. Return the Cleaned DataFrame:
+
+- The function returns the cleaned DataFrame with duplicates removed.
