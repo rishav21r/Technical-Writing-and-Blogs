@@ -97,3 +97,13 @@ df = drop_duplicates(df)
 #### 3. Return the Cleaned DataFrame:
 
 - The function returns the cleaned DataFrame with duplicates removed.
+
+#### Example:
+Assume you have a DataFrame with the following data:
+
+
+To remove duplicate rows based on all columns:
+
+```python
+df = drop_duplicates(df)
+```
