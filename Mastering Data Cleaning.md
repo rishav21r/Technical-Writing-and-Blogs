@@ -209,8 +209,8 @@ check_missing_data(df)
 
 Outliers, those exceptional data points that deviate significantly from the norm, wield the power to distort the very fabric of your analysis. Taming these unruly values requires a strategic approach, often involving the establishment of thresholds, the capping of extreme values, or the utilization of sophisticated statistical techniques like the Z-score. Among these methods, the **Interquartile Range (IQR)** emerges as a popular and effective tool for outlier detection. Let's delve deeper into this insightful technique and uncover the Python code that will equip you to identify and manage outliers with precision.
 
-![IQQR](./images/iqr.png)
+![IQQR](./images/iqr_boxplot.png)
 
-*Image from [Li, Zhi & Fei, Fei & Zhang, Guanglie. (2022)](https://www.researchgate.net/publication/362595959_Edge-to-Cloud_IIoT_for_Condition_Monitoring_in_Manufacturing_Systems_with_Ubiquitous_Smart_Sensors)*
+*Image from [Unraveling Outliers: Detecting, Taming, and Analyzing Data Mavericks — Exploring Effective Methods and Strategies for Handling Outliers](https://medium.com/@shubavarma/unraveling-outliers-detecting-taming-and-analyzing-data-mavericks-exploring-effective-methods-498f3f0928ab)*
 
 
