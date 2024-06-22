@@ -334,7 +334,7 @@ cleaned_df = clean_data('your_dataset.csv')
 
 - The function returns the cleaned DataFrame, ready for analysis.
 
-##Wrapping Up
+## Wrapping Up
 
 Data cleaning is essential, but it doesn't have to be a bottleneck. Python automation offers a solution. By following these 5 straightforward steps, you can streamline your preprocessing, mitigate errors, and shift your focus to uncovering valuable patterns and trends within your data.
 
