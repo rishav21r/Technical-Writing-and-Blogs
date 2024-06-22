@@ -204,3 +204,7 @@ check_missing_data(df)
 
 - The function prints which columns had their missing values imputed and which columns require further investigation.
 
+
+## Step 5: Dealing with Outliers
+
+Outliers, those exceptional data points that deviate significantly from the norm, wield the power to distort the very fabric of your analysis. Taming these unruly values requires a strategic approach, often involving the establishment of thresholds, the capping of extreme values, or the utilization of sophisticated statistical techniques like the Z-score. Among these methods, the **Interquartile Range (IQR)** emerges as a popular and effective tool for outlier detection. Let's delve deeper into this insightful technique and uncover the Python code that will equip you to identify and manage outliers with precision.
