@@ -129,3 +129,5 @@ To remove duplicate rows based on specific columns, say `['Name', 'Age']`:
 ```python
 df = drop_duplicates(df, columns=['Name', 'Age'])
 ```
+
+This will result in the same DataFrame as above since the duplicate row was identified by matching the Name and Age columns. Removing duplicates helps ensure that your dataset contains unique observations, which is crucial for accurate analysis and results.
