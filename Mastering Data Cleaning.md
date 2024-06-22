@@ -131,3 +131,54 @@ df = drop_duplicates(df, columns=['Name', 'Age'])
 ```
 
 This will result in the same DataFrame as above since the duplicate row was identified by matching the Name and Age columns. Removing duplicates helps ensure that your dataset contains unique observations, which is crucial for accurate analysis and results.
+
+
+## Step 4: Handling Missing Values
+
+Missing values are a frequent hurdle in data analysis. However, Python equips us with the tools to address them effectively.  Whether your strategy involves eliminating rows with missing data or employing imputation techniques, understanding the available methods and their corresponding code is key. Let's delve into the details and empower ourselves to make informed decisions about our data.
+
+### Code Explanation
+
+The process involves two main functions: check_missing_data(df) and dealing_missing_data(df). The check_missing_data(df) function assesses the proportion of missing values in the DataFrame and decides whether to drop rows with missing values or handle them column by column. The dealing_missing_data(df) function then addresses missing values by either imputing them or flagging them for further inspection.
+
+Two primary functions drive this process: `check_missing_data(df)` evaluates the extent of missing values and determines the handling strategy (row deletion or column-wise imputation). Subsequently, `dealing_missing_data(df)` executes the chosen approach, either filling in missing values or marking them for review.
+
+```python
+def check_missing_data(df):
+    # Calculate the proportion of rows with any missing values
+    proportion_null_rows = 100 * (df.isnull().any(axis=1).sum() / df.shape[0])
+    
+    if proportion_null_rows <= 5:
+        print(f"There are {df.isnull().any(axis=1).sum()} rows with null values. All of them are erased!")
+        df.dropna(inplace=True)
+    else:
+        print("Too many null values, we need to check columns by columns further.")
+        if df.isnull().sum().sum() > 0:
+            print("\nProportion of missing values by column")
+            values = 100 * (df.isnull().sum() / df.shape[0])
+            print(values)
+            dealing_missing_data(df)
+        else:
+            print("No missing values detected!")
+
+def dealing_missing_data(df):
+    # Handle the missing values
+    values = 100 * (df.isnull().sum() / df.shape[0])
+    to_impute = []
+    to_check = []
+    
+    for name, proportion in values.items():
+        if int(proportion) == 0:
+            continue
+        elif int(proportion) <= 10:
+            to_impute.append(name)
+            df[name].fillna(df[name].median(), inplace=True)
+        else:
+            to_check.append(name)
+    
+    print(f"\nThe missing values in {to_impute} have been replaced by the median.")
+    print(f"The columns {to_check} should be further investigated.")
+
+# Apply the function to your dataset
+check_missing_data(df)
+```
