@@ -54,10 +54,18 @@ df = read_data('your_dataset.csv')
 - If the file extension is `.csv`, it uses `pd.read_csv(file_path)` to read the data into a DataFrame.
 - If the file extension is `.json`, it uses `pd.read_json(file_path)`.
 - If the file extension is `.xls` or `.xlsx`, it uses `pd.read_excel(file_path)`.
-- If the file format is not supported, it raises a ValueError with an appropriate message.
+- If the file format is unsupported, it raises a ValueError with an appropriate message.
 
-This function ensures that you can handle multiple data formats with a single function call, making your data import process more flexible and efficient. Let’s break down the supported formats:
+This function ensures you can handle multiple data formats with a single function call, making your data import process more flexible and efficient. Let’s break down the supported formats:
 
 - CSV (Comma-Separated Values): It is commonly used for data exchange because it’s simple and supported by many applications.
 - JSON (JavaScript Object Notation): Used for transmitting data in web applications. 
 - Excel Files: Widely used for data storage and analysis in business contexts.
+
+## Step 3: Dealing with Duplicates
+
+Duplicate data can skew your analysis and lead to incorrect conclusions. Eliminating duplicates ensures that each piece of information in your dataset is unique, giving you a clearer picture of the data. Let's delve deeper into how to tackle duplicates and break down the Python code that makes it happen.
+
+### Code Explanation
+The `drop_duplicates(df, columns=None)` function acts as a data detective, meticulously identifying and removing duplicate rows lurking within your DataFrame.
+
