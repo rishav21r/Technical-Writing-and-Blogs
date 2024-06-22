@@ -213,4 +213,72 @@ Outliers, those exceptional data points that deviate significantly from the norm
 
 *Image from [Unraveling Outliers: Detecting, Taming, and Analyzing Data Mavericks — Exploring Effective Methods and Strategies for Handling Outliers](https://medium.com/@shubavarma/unraveling-outliers-detecting-taming-and-analyzing-data-mavericks-exploring-effective-methods-498f3f0928ab)*
 
+### Code Explanation
+
+The function `find_outliers_IQR(df)` identifies outliers in a DataFrame using the IQR method. It calculates the first (Q1) and third (Q3) quartiles, computes the IQR, and then determines the lower and upper bounds to identify outliers.
+
+```python
+def find_outliers_IQR(df):
+    outlier_indices = []
+    df = df.select_dtypes(include=['number'])
+    for column in df.columns:
+        Q1 = df[column].quantile(0.25)
+        Q3 = df[column].quantile(0.75)
+        IQR = Q3 - Q1
+        lower_bound = Q1 - 1.5 * IQR
+        upper_bound = Q3 + 1.5 * IQR
+
+        # Get the indices of outliers for each column
+        outlier_list_col = df[(df[column] < lower_bound) | (df[column] > upper_bound)].index
+        outlier_indices.extend(outlier_list_col)
+
+    outlier_indices = list(set(outlier_indices))  # Get unique indices
+    return df.iloc[outlier_indices]
+
+# Find outliers in your dataset
+outliers_df = find_outliers_IQR(df)
+print(outliers_df)
+```
+
+### Detailed Steps:
+
+#### 1. Select Numeric Columns:
+
+- The function first filters the DataFrame to include only numeric columns using `df.select_dtypes(include=['number'])`.
+
+#### 2. Calculate Quartiles and IQR:
+
+- For each numeric column, the function calculates the first quartile (Q1) using df[column].quantile(0.25) and the third quartile (Q3) using `df[column].quantile(0.75)`.
+- It computes the IQR by subtracting Q1 from Q3: **IQR = Q3 - Q1**.
+
+#### 3. Determine Lower and Upper Bounds:
+
+- The function calculates the lower bound as **Q1 - 1.5 * IQR** and the upper bound as **Q3 + 1.5 * IQR**.
+
+#### 4. Identify Outliers:
+
+- It identifies outliers by finding rows where the column value is less than the lower bound or greater than the upper bound: `df[(df[column] < lower_bound) | (df[column] > upper_bound)]`.
+- The indices of these outliers are collected in the outlier_indices list.
+
+#### 5. Return DataFrame with Outliers:
+
+- The function returns a DataFrame containing only the rows identified as outliers using `df.iloc[outlier_indices]`.
+
+### Example:
+
+Assume you have a DataFrame with numeric data:
+
+| Age | Salary  |
+|-----|---------|
+| 25  | 50000   |
+| 30  | 60000   |
+| 22  | 55000   |
+| 35  | 70000   |
+| 28  | 65000   |
+| 40  | 90000   |
+| 18  | 40000   |
+| 50  | 100000  |
+
+Using the `find_outliers_IQR(df)` function, the outliers would be identified based on the calculated IQR for each column, and you can then decide how to handle these outliers, such as removing them or capping their values.
+
 
