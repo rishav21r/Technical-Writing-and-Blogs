@@ -107,3 +107,11 @@ To remove duplicate rows based on all columns:
 ```python
 df = drop_duplicates(df)
 ```
+
+This will result in:
+
+To remove duplicate rows based on specific columns, say `['Name', 'Age']`:
+
+```python
+df = drop_duplicates(df, columns=['Name', 'Age'])
+```
