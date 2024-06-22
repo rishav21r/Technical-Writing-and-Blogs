@@ -101,6 +101,13 @@ df = drop_duplicates(df)
 #### Example:
 Assume you have a DataFrame with the following data:
 
+| Name | Age | Gender | Country |
+|------|-----|--------|---------|
+| John | 28  | Male   | USA     |
+| Anna | 22  | Female | UK      |
+| John | 28  | Male   | USA     |
+| Mike | 32  | Male   | Canada  |
+
 
 To remove duplicate rows based on all columns:
 
@@ -109,6 +116,13 @@ df = drop_duplicates(df)
 ```
 
 This will result in:
+
+| Name | Age | Gender | Country |
+|------|-----|--------|---------|
+| John | 28  | Male   | USA     |
+| Anna | 22  | Female | UK      |
+| Mike | 32  | Male   | Canada  |
+
 
 To remove duplicate rows based on specific columns, say `['Name', 'Age']`:
 
