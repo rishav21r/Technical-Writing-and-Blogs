@@ -1,11 +1,5 @@
 # Digital Transformation in Manufacturing: A Review on Trends, Challenges, and Future Directions
 
-**Author:** Rohit Rishav  
-**Word Count:** 2477  
-**Date:** 06-10-2023  
-**Institution:** University College Cork  
-**Course:** MSc Information System for Business Performance  
-
 ---
 
 ## Table of Contents
@@ -33,6 +27,8 @@ The future holds promise with Industry 4.0, which emphasizes cyber-physical syst
 ---
 
 ## Introduction
+
+![Evolutionary trajectory of information technology systems in manufacturing](./images/evolution_is_in_manuf.png)
 
 The manufacturing industry is undergoing a profound transformation due to the integration of digital technologies and information systems. This shift significantly impacts organizational operations, strategies, and decision-making. This literature review aims to explore the evolution of information technology in manufacturing, the current challenges, and the future trends shaping the industry.
 
