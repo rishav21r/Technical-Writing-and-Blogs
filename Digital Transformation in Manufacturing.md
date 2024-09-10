@@ -76,7 +76,8 @@ Mercedes-Benz's Factory 56 in Sindelfingen epitomizes the future of automotive p
 
 
 ### Daimler Truck: Siemens Digital Industries Software
-Daimler Truck is working with Siemens to develop a digital engineering platform that integrates design and development processes, streamlining product lifecycle management. This collaboration aims to create a unified IT framework for the company’s global operations.
+On the other hand, Daimler Truck, a global leader in truck and bus manufacturing, embarked on a digital transformation journey to foster vehicle development innovation. Collaborating with Siemens Digital Industries Software, Daimler Truck aims to establish a cutting-edge digital engineering platform using the Siemens Xcelerator portfolio. This global platform will streamline truck and bus product development and lifecycle management processes. By integrating workflows, systems, and design data, the platform will offer a cohesive IT landscape for Daimler Truck. Their decision to adopt Teamcenter as the core of their integrated engineering platform underscores Daimler Truck's dedication to digitalization and the importance of a unified IT framework.
+
 
 ---
 
