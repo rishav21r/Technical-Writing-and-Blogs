@@ -21,7 +21,7 @@ This review examines the digital transformation in manufacturing, highlighting t
 
 The future holds promise with Industry 4.0, which emphasizes cyber-physical systems and autonomous production processes. However, more research is required to explore the full potential of Digital Twin technology. Overall, leaders who embrace digital innovation are set to thrive in this evolving sector.
 
----
+
 
 ## Introduction
 
@@ -29,13 +29,13 @@ The future holds promise with Industry 4.0, which emphasizes cyber-physical syst
 
 The manufacturing industry is undergoing a profound transformation due to the integration of digital technologies and information systems. This shift significantly impacts organizational operations, strategies, and decision-making. This literature review aims to explore the evolution of information technology in manufacturing, the current challenges, and the future trends shaping the industry.
 
----
+
 
 ## Historic Perspective
 
 Historically, manufacturing has evolved through several technological phases, starting with the automation of structured processes. The introduction of information technology into manufacturing has led to reduced product development times, improved quality, and faster responses to market demands. The Fourth Industrial Revolution has further accelerated this trend, pushing for the digitalization of manufacturing systems.
 
----
+
 
 ## Current Trends
 
@@ -43,19 +43,19 @@ Historically, manufacturing has evolved through several technological phases, st
 2. **Artificial Intelligence (AI)**: AI technologies play a key role in optimizing industrial operations and decision-making, particularly in the Industry 4.0 context.
 3. **Big Data Analytics**: The integration of big data in manufacturing improves supply chain efficiency and enhances predictive capabilities.
 
----
+
 
 ## Impact of Information Systems
 
 Information systems have significantly enhanced operational efficiency in manufacturing, especially in material requirements planning (MRP) and inventory control. The initial disruptions caused by these systems eventually lead to significant improvements in organizational performance as businesses adapt.
 
----
+
 
 ## Information System and Decision-Making
 
 The relationship between information systems and decision-making in manufacturing is complex. With the increasing demands for global competitiveness, manufacturers need to employ multi-objective decision-making (MODM) methods, supported by advanced information systems to handle conflicting criteria in production strategies and technology selection.
 
----
+
 
 ## Key Technologies and Trends
 
@@ -64,7 +64,7 @@ The relationship between information systems and decision-making in manufacturin
 3. **Artificial Intelligence**: Revolutionizes predictive maintenance, quality assurance, and real-time monitoring, becoming a cornerstone for future manufacturing systems.
 4. **Big Data**: Empowers firms with insights to enhance operational and strategic decisions.
 
----
+
 
 ## Case Studies and Examples
 
@@ -76,7 +76,6 @@ Mercedes-Benz's Factory 56 in Sindelfingen epitomizes the future of automotive p
 On the other hand, Daimler Truck, a global leader in truck and bus manufacturing, embarked on a digital transformation journey to foster vehicle development innovation. Collaborating with Siemens Digital Industries Software, Daimler Truck aims to establish a cutting-edge digital engineering platform using the Siemens Xcelerator portfolio. This global platform will streamline truck and bus product development and lifecycle management processes. By integrating workflows, systems, and design data, the platform will offer a cohesive IT landscape for Daimler Truck. Their decision to adopt Teamcenter as the core of their integrated engineering platform underscores Daimler Truck's dedication to digitalization and the importance of a unified IT framework.
 
 
----
 
 ## Challenges and Limitations
 
@@ -85,13 +84,13 @@ Despite the progress, several challenges remain:
 - **Resistance to Change**: Companies often face internal resistance when implementing digital technologies due to the lack of immediate economic benefits.
 - **Integration Issues**: Operationalizing a transformative digital strategy requires more than just technology; it needs a systematic approach.
 
----
+
 
 ## Future Directions and Research Gaps
 
 Industry 4.0 envisions a future where cyber-physical systems dominate manufacturing. Products will control their own production processes, allowing for mass customization. However, challenges such as understanding the full potential of Digital Twin (DT) technology and addressing gaps in holistic technology adoption need further exploration.
 
----
+
 
 ## Conclusion
 
