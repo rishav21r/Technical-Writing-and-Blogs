@@ -96,7 +96,7 @@ Industry 4.0 envisions a future where cyber-physical systems dominate manufactur
 
 The journey towards digital transformation in manufacturing is complex but promising. The integration of technologies like AI, IoT, and big data is revolutionizing the sector, making operations more efficient and responsive to market demands. Leaders in the manufacturing industry who embrace these innovations are poised to thrive in the future of digital manufacturing.
 
----
+
 
 ## References
 
