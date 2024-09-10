@@ -1,7 +1,5 @@
 # Digital Transformation in Manufacturing: A Review on Trends, Challenges, and Future Directions
 
----
-
 ## Table of Contents
 - [Executive Summary](#executive-summary)
 - [Introduction](#introduction)
@@ -16,7 +14,6 @@
 - [Conclusion](#conclusion)
 - [References](#references)
 
----
 
 ## Executive Summary
 
